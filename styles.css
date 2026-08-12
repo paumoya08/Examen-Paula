@@ -40,6 +40,15 @@
     gap: 20px;
   }
 }
+@media (max-width: 480px) {
+  .header {
+    align-items: center;
+  }
+  .header__nav {
+    gap: 10px;
+    text-align: center;
+  }
+}
 .hero {
   width: 82%;
   margin: 60px auto 0;

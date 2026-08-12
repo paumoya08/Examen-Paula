@@ -30,7 +30,7 @@
         }
     }
 }
-
+// Ajustes responsive para pantallas pequeñas
 @media (max-width: $breakpoint-tablet) {
     .header {
         flex-direction: column;
@@ -39,5 +39,15 @@
     .header__nav {
         flex-direction: column;
         gap: 20px;
+    }
+}
+// Ajustes responsive para móviles
+@media (max-width: $breakpoint-mobile) {
+    .header {
+        align-items: center; 
+    }
+    .header__nav {
+        gap: 10px; 
+        text-align: center;
     }
 }
