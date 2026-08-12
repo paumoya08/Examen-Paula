@@ -1,0 +1,79 @@
+.hero {
+    width: 82%;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__text {
+    width: 48%;
+    h1 {
+        font-size: $font-size-xl;
+        font-weight: 400;
+        line-height: 1.35;
+    }
+    span {
+        color: $primary;
+        font-weight: bold;
+    }
+}
+
+p {
+    margin-top: $spacing-md;
+    max-width: 500px;
+    color: $text-light;
+    font-size: $font-size-base;
+    line-height: 1.6;
+}
+
+.hero__text strong {
+    font-weight: bold;
+}
+
+.hero__button {
+    display: inline-block; // alinea icono y texto
+    align-items: center; 
+    margin-top: $spacing-lg;
+    padding: 18px 30px;
+    background: $green;
+    color: white;
+    border-radius: 4px;
+    font-size: $font-size-base;
+    font-weight: bold;
+    text-decoration: none;
+&:hover,
+&:focus {
+    background: darken($green, 10%);
+    outline: 2px solid $primary;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    }
+}
+
+.hero__image {
+    width: 45%;
+    img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero__text,
+    .hero__image {
+        width: 100%;
+    }
+    .hero__text h1 {
+        font-size: 32px;
+    }
+}

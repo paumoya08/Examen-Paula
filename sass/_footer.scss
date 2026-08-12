@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 14px;
+    p {
+        color: $text;
+        margin: 0;
+    }
+    strong {
+        font-weight: bold;
+    }
+    .footer__dots {
+        margin-top: 15px; // separa los dots del texto
+        color: lighten($primary, 40%);
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+        .footer__dots {
+            font-size: 20px;
+            right: 10px;
+        }
+    }
+}
