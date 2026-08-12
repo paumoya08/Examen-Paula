@@ -23,13 +23,26 @@
     }
 }
 
+@media (max-width: $breakpoint-tablet) {
+    .footer {
+        text-align: center;   
+        padding: 20px;
+        font-size: 14px;
+    }
+    .footer__dots {
+        font-size: 24px;
+        margin-top: 10px; // separa los dots del texto
+    }
+}
+
 @media (max-width: $breakpoint-mobile) {
     .footer {
-        font-size: 12px;
+        text-align: center;   
         padding: 15px;
-        .footer__dots {
-            font-size: 20px;
-            right: 10px;
-        }
+        font-size: 12px;
+    }
+    .footer__dots {
+        font-size: 20px;
+        margin-top: 8px;    
     }
 }

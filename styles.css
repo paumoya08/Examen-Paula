@@ -182,14 +182,26 @@ p {
   letter-spacing: 8px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .footer__dots {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 480px) {
   .footer {
-    font-size: 12px;
+    text-align: center;
     padding: 15px;
+    font-size: 12px;
   }
-  .footer .footer__dots {
+  .footer__dots {
     font-size: 20px;
-    right: 10px;
+    margin-top: 8px;
   }
 }
 * {
