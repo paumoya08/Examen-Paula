@@ -126,6 +126,37 @@ p {
     font-size: 32px;
   }
 }
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__text,
+  .hero__image {
+    width: 100%;
+  }
+  .hero__text h1 {
+    font-size: 22px;
+  }
+  .hero__text p {
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .hero__button {
+    margin: 20px auto 0;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .hero__button .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .hero__image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .footer {
   position: relative;
   display: flex;

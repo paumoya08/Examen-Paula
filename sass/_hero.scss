@@ -1,3 +1,4 @@
+// Hero section: texto + imagen principal
 .hero {
     width: 82%;
     margin: 60px auto 0;
@@ -14,11 +15,10 @@
         line-height: 1.35;
     }
     span {
-        color: $primary;
+        color: $primary; // color destacado
         font-weight: bold;
     }
 }
-
 p {
     margin-top: $spacing-md;
     max-width: 500px;
@@ -31,6 +31,7 @@ p {
     font-weight: bold;
 }
 
+// Botón principal con ícono de WhatsApp
 .hero__button {
     display: inline-block; // alinea icono y texto
     align-items: center; 
@@ -44,14 +45,14 @@ p {
     text-decoration: none;
 &:hover,
 &:focus {
-    background: darken($green, 10%);
-    outline: 2px solid $primary;
+    background: darken($green, 10%); // efecto hover
+    outline: 2px solid $primary; // accesibilidad
 }
 
 .icon {
-    width: 20px;
+    width: 20px; // tamaño del icono
     height: 20px;
-    margin-right: 10px;
+    margin-right: 10px; // separa el icono del texto
     vertical-align: middle;
     }
 }
@@ -75,5 +76,37 @@ p {
     }
     .hero__text h1 {
         font-size: 32px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .hero {
+    flex-direction: column;
+    text-align: center;
+    }
+    .hero__text,
+    .hero__image {
+    width: 100%;
+    }
+    .hero__text h1 {
+    font-size: 22px; // titulo más pequeño en móviles
+    }
+    .hero__text p {
+    font-size: 14px; // texto más legible en móvil
+    margin: 0 auto;
+    max-width: 90%;
+    }
+    .hero__button {
+    margin: 20px auto 0; // centrar botón
+    padding: 12px 20px;  
+    font-size: 14px;
+    }
+    .hero__button .icon {
+    width: 18px;
+    height: 18px;
+    }
+    .hero__image img {
+    max-width: 100%;
+    height: auto; // evita que se deforme
     }
 }
